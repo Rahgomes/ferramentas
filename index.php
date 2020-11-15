@@ -14,7 +14,7 @@ include('inc/head.php');
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <div class="col-lg-7">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="<?=$url?>vendor/images/bg.svg" alt="<?= $nomeSite ?>" title="<?= $nomeSite ?>">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="<?=$url?>vendor/images/ferramentas-rah.svg" alt="<?= $nomeSite ?>" title="<?= $nomeSite ?>">
       </div>
       <!-- /.col-lg-8 -->
       <div class="col-lg-5">
@@ -39,10 +39,10 @@ include('inc/head.php');
         <h2>Ferramentas em destaque</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-md-4 mb-5">
         <div class="card card-custom h-100">
-          <img class="card-img-top px-5 py-3" src="<?=$url?>vendor/images/card.svg" alt="Gerador de Meta Tags" title="Gerador de Meta Tags">
+          <img class="card-img-top px-4 py-3" src="<?=$url?>vendor/images/card.svg" alt="Gerador de Meta Tags" title="Gerador de Meta Tags">
           <div class="card-body">
             <h3 class="card-title">Gerador de Meta Tags</h3>
             <p class="card-text">Ferramenta para gerar Meta Tags para seu site de forma rápida e interativa em poucos passos.</p>
