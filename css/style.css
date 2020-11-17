@@ -124,6 +124,10 @@ body {
   transition   : 250ms all ease;
 }
 
+.progress-bar-custom {
+  background        : #3d2c60;
+}
+
 /* COLUNA LATERAL */
 .lateral-sticky {
   position: sticky;

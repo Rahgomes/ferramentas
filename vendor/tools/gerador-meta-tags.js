@@ -22,13 +22,26 @@ function metaTagTitle() {
     let contentMetaTitle = document.querySelector('#contentMetaTitle');
     let copyClipboard = document.querySelector('#copyClipboard');
 
+    let barSize = document.querySelector('#barSize');
+
     metaTitle.addEventListener('input', () => {
         metaTitleCount.innerHTML = metaTitle.value.length;
+
+        if (metaTitle.value.length === 0 || metaTitle.value.length <= 44) {            
+            barSize.style.backgroundColor = "#ee7c1b";
+            barSize.style.width = `${metaTitle.value.length}%`;
+        } else if (metaTitle.value.length === 45 || metaTitle.value.length <= 66) {
+            barSize.style.backgroundColor = "#7ad03a";
+            barSize.style.width = `${metaTitle.value.length}%`;
+        } else {
+            barSize.style.backgroundColor = "#dc3232";
+            barSize.style.width = `${metaTitle.value.length}%`;
+        }
+
         contentMetaTitle.value = `<title>${metaTitle.value}</title>`;
     });
 
     copyClipboard.addEventListener('click', () => copiedContent(contentMetaTitle, copyClipboard));
-
 }
 
 function metaTagDescription() {
@@ -36,9 +49,23 @@ function metaTagDescription() {
     let metaDescriptionCount = document.querySelector('#metaDescriptionCount');
     let contentMetaDescription = document.querySelector('#contentMetaDescription');
     let copyClipboard = document.querySelector('#copyClipboard2');
+    
+    let barSize2 = document.querySelector('#barSize2');
 
     metaDescription.addEventListener('input', () => {
         metaDescriptionCount.innerHTML = metaDescription.value.length;
+
+        if (metaDescription.value.length === 0 || metaDescription.value.length <= 139) {            
+            barSize2.style.backgroundColor = "#ee7c1b";
+            barSize2.style.width = `${metaDescription.value.length}%`;
+        } else if (metaDescription.value.length === 140 || metaDescription.value.length <= 160) {
+            barSize2.style.backgroundColor = "#7ad03a";
+            barSize2.style.width = `${metaDescription.value.length}%`;
+        } else {
+            barSize2.style.backgroundColor = "#dc3232";
+            barSize2.style.width = `${metaDescription.value.length}%`;
+        }
+        
         contentMetaDescription.value = `<meta name="description" content="${metaDescription.value}" />`;
     });
 
@@ -51,9 +78,24 @@ function metaTagKeywords() {
     let contentMetaKeywords = document.querySelector('#contentMetaKeywords');
     let copyClipboard = document.querySelector('#copyClipboard3');
 
+    let barSize3 = document.querySelector('#barSize3');
+
     metaKeywords.addEventListener('input', () => {
         let keyword = metaKeywords.value.split("  ").join(",");
-        metaKeywordsCount.innerHTML = keyword.split(",").length;
+        let keywordLength = keyword.split(",").length;
+        metaKeywordsCount.innerHTML = keywordLength;
+
+        if (keywordLength === 0 || keywordLength <= 3) {            
+            barSize3.style.backgroundColor = "#ee7c1b";
+            barSize3.style.width = `${50}%`;
+        } else if (keywordLength === 4 || keywordLength <= 10) {
+            barSize3.style.backgroundColor = "#7ad03a";
+            barSize3.style.width = `${75}%`;
+        } else {
+            barSize3.style.backgroundColor = "#dc3232";
+            barSize3.style.width = `${100}%`;
+        }
+        
         contentMetaKeywords.value = `<meta name="keywords" content="${keyword}" />`;
     });
 
