@@ -40,6 +40,7 @@ function metaTagTitle() {
         }
 
         contentMetaTitle.value = `<title>${metaTitle.value}</title>`;
+        if(metaTitle.value.length === 0) contentMetaTitle.value = '';
     });
 
     copyClipboard.addEventListener('click', () => copiedContent(contentMetaTitle, copyClipboard));
@@ -69,6 +70,7 @@ function metaTagDescription() {
         }
         
         contentMetaDescription.value = `<meta name="description" content="${metaDescription.value}" />`;
+        if(metaDescription.value.length === 0) contentMetaDescription.value = '';
     });
 
     copyClipboard.addEventListener('click', () => copiedContent(contentMetaDescription, copyClipboard));
@@ -100,6 +102,11 @@ function metaTagKeywords() {
         }
         
         contentMetaKeywords.value = `<meta name="keywords" content="${keyword}" />`;
+        if(metaKeywords.value.length === 0){
+            contentMetaKeywords.value = '';
+            metaKeywordsCount.innerHTML = 0;
+            barSize3.value = 0;
+        }
     });
 
     copyClipboard.addEventListener('click', () => copiedContent(contentMetaKeywords, copyClipboard));
@@ -112,6 +119,7 @@ function metaTagAuthor() {
 
     metaAuthor.addEventListener('input', () => {
         contentMetaAuthor.value = `<meta name="author" content="${metaAuthor.value}" />`;;
+        if(metaAuthor.value.length === 0) contentMetaAuthor.value = '';
     });
 
     copyClipboard.addEventListener('click', () => copiedContent(contentMetaAuthor, copyClipboard));
@@ -171,13 +179,14 @@ function metaTagResults() {
 
     contentMetaResult.value =
         `<head>
-    ${contentMetaTitle.value}
-    ${contentMetaDescription.value}
-    ${contentMetaKeywords.value}
-    ${contentMetaAuthor.value}
-    ${contentMetaRobots.value}
-    ${contentMetaCharset.value}
-    ${contentMetaLanguage.value}
+    ${contentMetaTitle.value ? contentMetaTitle.value : '<title></title>'}
+    ${contentMetaDescription.value ? contentMetaDescription.value : '<meta name="description" content="" />'}
+    ${contentMetaKeywords.value ? contentMetaKeywords.value : '<meta name="keywords" content="" />'}
+    ${contentMetaAuthor.value ? contentMetaAuthor.value : '<meta name="author" content="" />'}
+    ${contentMetaRobots.value ? contentMetaRobots.value : '<meta name="robots" content="" />'}
+    ${contentMetaCharset.value ? contentMetaCharset.value : '<meta http-equiv="Content-Type" content="" />'}
+    ${contentMetaLanguage.value ? contentMetaLanguage.value : '<meta http-equiv="Content-Language" content="" />'}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>`
 
     copyClipboard.addEventListener('click', () => copiedContent(contentMetaResult, copyClipboard));

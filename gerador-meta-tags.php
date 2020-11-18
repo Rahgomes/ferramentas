@@ -194,7 +194,8 @@ include('inc/head.php');
 
                     <div class="form-group">
                         <label for="contentMetaResult" class="lead font-weight-bold">Resultado final com todas as Tags</label>
-                        <small class="obsMetaTag form-text text-dark mb-1">Antes de <span class="font-weight-bold">exibir todos os resultados</span> primeiramente preencha cada meta tag <span class="font-weight-bold">acima</span> que deseja utilizar em seu site</small>
+                        <small class="obsMetaTag form-text text-dark mb-1">Antes de <span class="font-weight-bold">exibir todos os resultados</span> primeiramente preencha cada meta tag <span class="font-weight-bold">acima</span> que deseja utilizar em seu site <br>
+                        Bônus... Meta tag Viewport, tag padrão para responsividade</small>
                         <div class="form-row">
                             <div class="col-md-10">
                                 <textarea id="contentMetaResult" name="contentMetaResult" class="form-control" rows="10" readonly></textarea>
@@ -216,7 +217,7 @@ include('inc/head.php');
 
                     <p>Os robôs que fazem este papel de analisar os dados de seu site agradecem se seu arquivo HTML possuir as meta tags que possibilitam que seja indexado seu conteúdo na internet. Ainda assim a utilização das meta tags não são os únicos fatores nos quais fará com que seu site tenha muita relevância e um bom posicionamento na web, sendo que o algoritmo possui mais de 250 fatores para esta indexação.</p>
 
-                    <p>Abordamos mais da importância das Meta tags em nosso artigo: <a href="http://blog.ramongomes.com.br/meta-tags/" target="_blank" title="O que são Meta Tags" class="simple-link-custom-dark text-decoration-none">O que são Meta Tags</a>, falamos também sobre as principais tags para utilizar em seu site, além de algumas tags alternativas, que dependendo do projeto pode sim ser essencial sua utilização.</p>
+                    <p>Abordamos mais da importância das Meta tags em nosso artigo: <a href="http://blog.ramongomes.com.br/meta-tags/" target="_blank" title="O que são Meta Tags" class="simple-link-custom-dark text-decoration-none font-weight-bold">O que são Meta Tags</a>, falamos também sobre as principais tags para utilizar em seu site, além de algumas tags alternativas, que dependendo do projeto pode sim ser essencial sua utilização.</p>
                 </div>
 
             </div>
