@@ -128,6 +128,13 @@ body {
   background        : #3d2c60;
 }
 
+/* PROGRESS BAR */
+progress {
+	width: 90%;
+  height: 30px;
+}
+/* FIM PROGRESS BAR */
+
 /* COLUNA LATERAL */
 .lateral-sticky {
   position: sticky;

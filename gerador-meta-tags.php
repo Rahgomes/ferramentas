@@ -34,9 +34,11 @@ include('inc/head.php');
                         <small class="obsMetaTag form-text text-dark">Para que seu titulo apareça completamente nos buscadores é recomendado utilizar até 66 caracteres</small>
                         <textarea class="form-control border border-info mt-1" id="metaTitle" name="metaTitle" placeholder="Preencha aqui o que deseja para seu título (title)" rows="2" cols="50"></textarea>
                         <small class="form-text text-dark">Quantidade de caracteres da Meta Tag Title:</small>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="67" id="barSize">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <progress id="barSize" value="0" max="67" role="progressbar"></progress>
+                            <div>
                                 <span id="metaTitleCount">0</span>
+                                <span id="smile" style="font-size: 20px;"></span>
                             </div>
                         </div>
                         <label for="contentMetaTitle" class="lead font-weight-bold mt-3">Exibição final da Tag</label>
@@ -57,9 +59,11 @@ include('inc/head.php');
                         <small class="obsMetaTag form-text text-dark">Deixe uma descrição para que as pessoas possam visitá-lo. Recomendação é de 140 a 160 caracteres</small>
                         <textarea class="form-control border border-info mt-1" id="metaDescription" name="metaDescription" placeholder="Preencha aqui o que deseja para sua descrição (description)" rows="4" cols="50"></textarea>
                         <small class="form-text text-dark">Quantidade de caracteres da Meta Tag Description:</small>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="160" id="barSize2">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <progress id="barSize2" value="0" max="160" role="progressbar"></progress>
+                            <div>
                                 <span id="metaDescriptionCount">0</span>
+                                <span id="smile2" style="font-size: 20px;"></span>
                             </div>
                         </div>
                         <label for="contentMetaDescription" class="lead font-weight-bold mt-3">Exibição final da Tag</label>
@@ -80,9 +84,11 @@ include('inc/head.php');
                         <small class="obsMetaTag form-text text-dark">Para adicionar palavras-chave compostas dê 2 espaços. <br>Recomenda-se utilizar entre 4 a 10 palavras que sejam diretamente relacionadas ao conteúdo da página</small>
                         <textarea class="form-control border border-info mt-1" id="metaKeywords" name="metaKeywords" placeholder="Preencha aqui qual, ou quais palavra(s)-chave(s) (keywords) deseja" rows="2" cols="50"></textarea>
                         <small class="form-text text-dark">Quantidade de Keywords:</small>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="0" aria-valuemin="4" aria-valuemax="10" id="barSize3">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <progress id="barSize3" value="0" max="10" role="progressbar"></progress>
+                            <div>
                                 <span id="metaKeywordsCount">0</span>
+                                <span id="smile3" style="font-size: 20px;"></span>
                             </div>
                         </div>
                         <label for="contentMetaKeywords" class="lead font-weight-bold mt-3">Exibição final da Tag</label>
@@ -100,7 +106,7 @@ include('inc/head.php');
 
                     <div class="form-group">
                         <label for="metaAuthor" class="lead font-weight-bold">Meta Tag Author</label>
-                        <!-- <small class="obsMetaTag form-text text-dark">Deixe uma descrição para que as pessoas possam visitá-lo. Sugestão de 140 a 160 caracteres</small> -->
+                        <small class="obsMetaTag form-text text-dark">Preencha abaixo quem é o Autor da página</small>
                         <textarea class="form-control border border-info mt-1" id="metaAuthor" name="metaAuthor" placeholder="Preencha aqui qual é o autor (author)" rows="1" cols="50"></textarea>
                         <label for="contentMetaAuthor" class="lead font-weight-bold mt-3">Exibição final da Tag</label>
                         <div class="form-row">
@@ -117,7 +123,7 @@ include('inc/head.php');
 
                     <div class="form-group">
                         <label for="metaRobots" class="lead font-weight-bold">Meta Tag Robots</label>
-                        <!-- <small class="obsMetaTag form-text text-dark">Deixe uma descrição para que as pessoas possam visitá-lo. Sugestão de 140 a 160 caracteres</small> -->
+                        <small class="obsMetaTag form-text text-dark">Importante para permitir que os mecanismos de busca indexem, ou não suas páginas</small>
                         <select name="metaRobots" id="metaRobots" class="custom-select">
                             <option value="selecionar">Selecione a meta tag Robots</option>
                             <option value="index-follow">Indexar e rastrear todos os links da página</option>
@@ -140,7 +146,7 @@ include('inc/head.php');
 
                     <div class="form-group">
                         <label for="metaCharset" class="lead font-weight-bold font-weight-bold">Tipo de Charset</label>
-                        <!-- <small class="obsMetaTag form-text text-dark">Deixe uma descrição para que as pessoas possam visitá-lo. Sugestão de 140 a 160 caracteres</small> -->
+                        <small class="obsMetaTag form-text text-dark">Informe ao browser qual o tipo de codificação de caracteres deve ser utilizado em seu conteúdo</small>
                         <select name="metaCharset" id="metaCharset" class="custom-select">
                             <option value="selecionar">Selecione o tipo de Charset</option>
                             <option value="UTF-8">UTF-8</option>
@@ -161,7 +167,7 @@ include('inc/head.php');
 
                     <div class="form-group">
                         <label for="metaLanguage" class="lead font-weight-bold">Meta Tag Language</label>
-                        <!-- <small class="obsMetaTag form-text text-dark">Deixe uma descrição para que as pessoas possam visitá-lo. Sugestão de 140 a 160 caracteres</small> -->
+                        <small class="obsMetaTag form-text text-dark">Declare no HTML qual língua seu conteúdo atua</small>
                         <select name="metaLanguage" id="metaLanguage" class="custom-select">
                             <option value="selecionar">Selecione a língua desejada</option>
                             <option value="pt-br">Português</option>
@@ -188,7 +194,7 @@ include('inc/head.php');
 
                     <div class="form-group">
                         <label for="contentMetaResult" class="lead font-weight-bold">Resultado final com todas as Tags</label>
-                        <small class="obsMetaTag form-text text-dark mb-1">Antes de <span class="font-weight-bold">exibir todos os resultados</span> primeiramente preencha cada meta tag que deseja utilizar em seu site</small>
+                        <small class="obsMetaTag form-text text-dark mb-1">Antes de <span class="font-weight-bold">exibir todos os resultados</span> primeiramente preencha cada meta tag <span class="font-weight-bold">acima</span> que deseja utilizar em seu site</small>
                         <div class="form-row">
                             <div class="col-md-10">
                                 <textarea id="contentMetaResult" name="contentMetaResult" class="form-control" rows="10" readonly></textarea>

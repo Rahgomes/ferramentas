@@ -23,19 +23,20 @@ function metaTagTitle() {
     let copyClipboard = document.querySelector('#copyClipboard');
 
     let barSize = document.querySelector('#barSize');
+    let smile = document.querySelector('#smile');
 
     metaTitle.addEventListener('input', () => {
         metaTitleCount.innerHTML = metaTitle.value.length;
 
-        if (metaTitle.value.length === 0 || metaTitle.value.length <= 44) {            
-            barSize.style.backgroundColor = "#ee7c1b";
-            barSize.style.width = `${metaTitle.value.length}%`;
+        if (metaTitle.value.length === 0 || metaTitle.value.length <= 44) {     
+            smile.innerHTML = '&#x1F610;';
+            barSize.value = metaTitle.value.length;
         } else if (metaTitle.value.length === 45 || metaTitle.value.length <= 66) {
-            barSize.style.backgroundColor = "#7ad03a";
-            barSize.style.width = `${metaTitle.value.length}%`;
+            smile.innerHTML = '&#x1F603';
+            barSize.value = metaTitle.value.length;
         } else {
-            barSize.style.backgroundColor = "#dc3232";
-            barSize.style.width = `${metaTitle.value.length}%`;
+            smile.innerHTML = '&#x1F61F;';
+            barSize.value = metaTitle.value.length;
         }
 
         contentMetaTitle.value = `<title>${metaTitle.value}</title>`;
@@ -51,19 +52,20 @@ function metaTagDescription() {
     let copyClipboard = document.querySelector('#copyClipboard2');
     
     let barSize2 = document.querySelector('#barSize2');
+    let smile2 = document.querySelector('#smile2');
 
     metaDescription.addEventListener('input', () => {
         metaDescriptionCount.innerHTML = metaDescription.value.length;
 
-        if (metaDescription.value.length === 0 || metaDescription.value.length <= 139) {            
-            barSize2.style.backgroundColor = "#ee7c1b";
-            barSize2.style.width = `${metaDescription.value.length}%`;
+        if (metaDescription.value.length === 0 || metaDescription.value.length <= 139) {     
+            smile2.innerHTML = '&#x1F610;';
+            barSize2.value = metaDescription.value.length;
         } else if (metaDescription.value.length === 140 || metaDescription.value.length <= 160) {
-            barSize2.style.backgroundColor = "#7ad03a";
-            barSize2.style.width = `${metaDescription.value.length}%`;
+            smile2.innerHTML = '&#x1F603';
+            barSize2.value = metaDescription.value.length;
         } else {
-            barSize2.style.backgroundColor = "#dc3232";
-            barSize2.style.width = `${metaDescription.value.length}%`;
+            smile2.innerHTML = '&#x1F61F;';
+            barSize2.value = metaDescription.value.length;
         }
         
         contentMetaDescription.value = `<meta name="description" content="${metaDescription.value}" />`;
@@ -79,21 +81,22 @@ function metaTagKeywords() {
     let copyClipboard = document.querySelector('#copyClipboard3');
 
     let barSize3 = document.querySelector('#barSize3');
+    let smile3 = document.querySelector('#smile3');
 
     metaKeywords.addEventListener('input', () => {
         let keyword = metaKeywords.value.split("  ").join(",");
         let keywordLength = keyword.split(",").length;
         metaKeywordsCount.innerHTML = keywordLength;
 
-        if (keywordLength === 0 || keywordLength <= 3) {            
-            barSize3.style.backgroundColor = "#ee7c1b";
-            barSize3.style.width = `${50}%`;
+        if (keywordLength === 0 || keywordLength <= 3) {     
+            smile3.innerHTML = '&#x1F610;';
+            barSize3.value = keywordLength;
         } else if (keywordLength === 4 || keywordLength <= 10) {
-            barSize3.style.backgroundColor = "#7ad03a";
-            barSize3.style.width = `${75}%`;
+            smile3.innerHTML = '&#x1F603';
+            barSize3.value = keywordLength;
         } else {
-            barSize3.style.backgroundColor = "#dc3232";
-            barSize3.style.width = `${100}%`;
+            smile3.innerHTML = '&#x1F61F;';
+            barSize3.value = keywordLength;
         }
         
         contentMetaKeywords.value = `<meta name="keywords" content="${keyword}" />`;
