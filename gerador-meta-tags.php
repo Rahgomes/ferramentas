@@ -234,7 +234,7 @@ include('inc/head.php');
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-    <script src="vendor/tools/gerador-meta-tags.js"></script>
+    <script src="vendor/tools/gerador-meta-tags/gerador-meta-tags.js"></script>
 
 </body>
 

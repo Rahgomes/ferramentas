@@ -39,11 +39,11 @@
      #RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 
-        RewriteCond %{http_host} ^localhost/ferramentas [NC]
+        RewriteCond %{http_host} ^ferramentas.ramongomes.com.br [NC]
 
-        RewriteRule ^(.*)$ http://localhost/ferramentas/$1 [r=301,NC]
+        RewriteRule ^(.*)$ http://www.ferramentas.ramongomes.com.br/$1 [r=301,NC]
 
-        RewriteRule ^index.php$ http://localhost/ferramentas/ [r=301,NC,L]
+        RewriteRule ^index.php$ http://www.ferramentas.ramongomes.com.br/ [r=301,NC,L]
 
 
 
@@ -57,7 +57,7 @@
 
         #redirects 
 
-        #redirect 301 /produto http://localhost/ferramentas/
+        #redirect 301 /produto http://www.ferramentas.ramongomes.com.br/
         
         #RewriteCond %{REQUEST_URI} ^(.*)colar_link_antigo(.*)$
         #RewriteRule ^(.*) novo_dominio [L,R=301,QSD]
@@ -70,13 +70,13 @@
 
     # Exibe página não encontrada se url não existir
 
-    errordocument 404 http://localhost/ferramentas/404
+    errordocument 404 http://www.ferramentas.ramongomes.com.br/404
 
 
 
     # Redireciona erro 403 para página 404
 
-    errordocument 403 http://localhost/ferramentas/404
+    errordocument 403 http://www.ferramentas.ramongomes.com.br/404
 
 
 

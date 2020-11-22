@@ -1,8 +1,8 @@
 <?
 $nomeSite = 'Ferramentas do Rah';
 // $slogan = '';
-// $url = 'http://localhost/ferramentas/';
-$url = 'http://www.ferramentas.ramongomes.com.br/';
+$url = 'http://localhost/ferramentas/';
+// $url = 'http://www.ferramentas.ramongomes.com.br/';
 $author = 'Ramon Gomes';
 $prepos = array(' a ',' á ',' à ',' ante ',' até ',' após ',' de ',' desde ',' em ',' entre ',' com ',' para ',' por ',' perante ',' sem ',' sob ',' sobre ',' na ',' no ',' e ',' do ',' da ',' ','(',')','\'','"','.','/',':',' | ', ',, ');
 

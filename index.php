@@ -44,8 +44,8 @@ include('inc/head.php');
         <div class="card card-custom h-100">
           <img class="card-img-top px-4 py-3" src="<?=$url?>vendor/images/card.svg" alt="Gerador de Meta Tags" title="Gerador de Meta Tags">
           <div class="card-body">
-            <h3 class="card-title">Gerador de Meta Tags</h3>
-            <p class="card-text">Ferramenta para gerar Meta Tags para seu site de forma rápida e interativa em poucos passos.</p>
+            <h4 class="card-title">Gerador de Meta Tags</h4>
+            <p class="card-text">Nosso gerador de meta tags é uma ferramenta que cria snippets(códigos) HTML para as páginas...</p>
           </div>
           <div class="card-footer card-footer-custom">
             <a href="<?= $url ?>gerador-meta-tags" class="btn btn-primary btn-custom btn-sm w-100" title="Gerador de Meta Tags">Veja mais</a>
@@ -53,18 +53,18 @@ include('inc/head.php');
         </div>
       </div>
       <!-- /.col-md-4 -->
-      <!-- <div class="col-md-4 mb-5">
+      <div class="col-md-4 mb-5">
         <div class="card card-custom h-100">
-          <img class="card-img-top px-5 py-3" src="vendor/images/card.svg" alt="">
+          <img class="card-img-top px-4 py-3" src="<?=$url?>vendor/images/card.svg" alt="Limpador de Tags HTML" title="Limpador de Tags HTML">
           <div class="card-body">
-            <h3 class="card-title">Ferramenta Online 2</h3>
-            <p class="card-text">Em breve...</p>
+            <h4 class="card-title">Limpador de Tags HTML</h4>
+            <p class="card-text">Extraia o conteúdo de texto que estão entre as tags HTML utilizando nosso Limpador de tags HTML...</p>
           </div>
           <div class="card-footer card-footer-custom">
-            <a href="javascript:;" class="btn btn-primary btn-custom btn-sm w-100">Em breve</a>
+            <a href="<?= $url ?>limpador-tags-html" class="btn btn-primary btn-custom btn-sm w-100" title="Limpador de Tags HTML">Veja mais</a>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- /.col-md-4 -->
       <!-- <div class="col-md-4 mb-5">
         <div class="card card-custom h-100">

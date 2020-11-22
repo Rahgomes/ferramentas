@@ -18,7 +18,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" title="Ferramentas" href="<?= $url ?>ferramentas" id="dropDownProdutos" aria-haspopup="true" aria-expanded="false">Ferramentas</a>
             <div class="dropdown-menu dropdown-menu-custom dropdown-menu-right" aria-labelledby="dropDownProdutos">
-              <a class="dropdown-item" href="<?=$url?>gerador-meta-tags" title="Gerador de Meta Tags">Gerador de Meta Tags</a>
+              <a class="dropdown-item" href="<?= $url ?>gerador-meta-tags" title="Gerador de Meta Tags">Gerador de Meta Tags</a>
+              <a class="dropdown-item" href="<?= $url ?>limpador-tags-html" title="Limpador de Tags HTML">Limpador de Tags HTML</a>
             </div>
           </li>
           <li class="nav-item">

@@ -4,7 +4,7 @@
 <head>
     <? include('inc/geral.php'); ?>
 
-    <title><?= $title . ' ' . $nomeSite ?></title>
+    <title><?= $title?></title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="<?= $url . $urlPagina ?>">
     <meta property="og:region" content="Brasil">
-    <meta property="og:title" content="<?= $title . " - " . $nomeSite ?>">
+    <meta property="og:title" content="<?= $title?>">
     <meta property="og:type" content="article">
     <meta property="og:url" content="<?= $url . $urlPagina ?>">
     <meta property="og:description" content="<?= $desc ?>">
