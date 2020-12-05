@@ -14,11 +14,9 @@ function removeCode() {
     let textArea = document.querySelector('#textArea');
     let copyClipboard = document.querySelector('#copyClipboard');
 
-    codeArea.addEventListener('input', () => {
-        // metaTitleCount.innerHTML = metaTitle.value.length;
+    String.prototype.stripHTML = function () { return this.replace(/(<([^>]+)>)/gi, ""); }
 
-String.prototype.stripHTML = function() {return this.replace(/(<([^>]+)>)/gi, "");}
- 
+    codeArea.addEventListener('input', () => {
         textArea.value = `${codeArea.value.stripHTML()}`;
     });
 

@@ -18,7 +18,7 @@
   <div class="lateral-sticky">
     <div class="card my-4">
       <h5 class="card-header card-header-custom">SEO</h5>
-      <div class="card-body">
+      <div class="card-body py-2">
         <div class="row">
           <div class="col-lg-12">
             <ul class="list-unstyled mb-0">
@@ -33,12 +33,27 @@
 
     <div class="card my-4">
       <h5 class="card-header card-header-custom">DESENVOLVIMENTO WEB</h5>
-      <div class="card-body">
+      <div class="card-body py-2">
         <div class="row">
           <div class="col-lg-12">
             <ul class="list-unstyled mb-0">
               <li>
                 <a href="<?= $url ?>limpador-tags-html" class="simple-link-custom-dark text-decoration-none" title="Limpador de Tags HTML">Limpador de Tags HTML</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-4">
+      <h5 class="card-header card-header-custom">UTILITÁRIOS</h5>
+      <div class="card-body py-2">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="<?= $url ?>whois" class="simple-link-custom-dark text-decoration-none" title="WHOIS">WHOIS</a>
               </li>
             </ul>
           </div>

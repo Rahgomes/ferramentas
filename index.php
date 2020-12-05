@@ -66,18 +66,18 @@ include('inc/head.php');
         </div>
       </div>
       <!-- /.col-md-4 -->
-      <!-- <div class="col-md-4 mb-5">
+      <div class="col-md-4 mb-5">
         <div class="card card-custom h-100">
-          <img class="card-img-top px-5 py-3" src="vendor/images/card.svg" alt="">
+          <img class="card-img-top px-4 py-3" src="<?=$url?>vendor/images/card.svg" alt="WHOIS" title="WHOIS">
           <div class="card-body">
-            <h3 class="card-title">Ferramenta Online 3</h3>
-            <p class="card-text">Em breve...</p>
+            <h4 class="card-title">WHOIS</h4>
+            <p class="card-text">Consulte aqui as informações de um domínio .com.br que já está no ar e fique por dentro de diversos dados...</p>
           </div>
           <div class="card-footer card-footer-custom">
-            <a href="javascript:;" class="btn btn-primary btn-custom btn-sm w-100">Em breve</a>
+            <a href="<?= $url ?>whois" class="btn btn-primary btn-custom btn-sm w-100" title="WHOIS">Veja mais</a>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- /.col-md-4 -->
 
     </div>

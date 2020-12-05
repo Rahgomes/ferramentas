@@ -165,6 +165,13 @@ progress {
 
 /* FIM FORMULÁRIO CUSTOM */
 
+/* TABLE CUSTOM */
+.table-hover.table-hover-custom tbody tr:hover {
+  color: #fff;
+  background: #3d2c60;
+}
+/* FIM TABLE CUSTOM */
+
 /* SCROLLBAR LATERAL */
 /* width */
 ::-webkit-scrollbar {
